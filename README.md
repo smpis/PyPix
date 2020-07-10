@@ -12,6 +12,6 @@ As Mesh Lab is  not suitable for real-time 3D visualization, we create our own 3
 This is fast enough to run for video input and we demonstrate that by moving the output model around.
 Next, we recreate this pipeline on the PYNQ board. We demonstrate the concept on stereo images and time the performance. 
 A custom overlay will be designed in the future for video input to accelerate both disparity map and 3D point cloud generation, which are the most compute-intensive tasks.
-For our custom 3D to 2D projection we design an overlay for accelerating MAC operations and then test it on the PYNQ board via Jupyter Notebook
+For our custom 3D to 2D projection we design an overlay for accelerating MAC operations and then test it on the PYNQ board via Jupyter Notebook.
 
 ![design_flow](https://github.com/smpis/PyPix/blob/master/images/design_flow.PNG)
