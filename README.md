@@ -4,7 +4,7 @@
 YouTube video link: https://www.youtube.com/watch?v=YeAkoiZharE
 
 In this project we aim to take a step towards real-time generation of 3D vision data.
-This has many applications in domains such as drone-mapping, real time photogrammetry, AR/VR etc. 
+This has many applications in domains such as drone-mapping, real-time photogrammetry, AR/VR etc. 
 Real-time processing of video requires significant computations, and mobile applications like drones require low power portable units. 
 The PYNQ platform provides the right tools to implement a complete pipeline for 3D reconstruction based on these constraints. 
 Initially, we generate the 3D point cloud on an Intel CPU and next, we visualize it using Mesh Lab.
