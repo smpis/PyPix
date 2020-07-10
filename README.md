@@ -1,2 +1,2 @@
 # PyPix
-3D environmental reconstruction based on image stitching
+3D scene reconstruction based on stereo vision
