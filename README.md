@@ -14,6 +14,4 @@ Next, we recreate this pipeline on the PYNQ board. We demonstrate the concept on
 A custom overlay will be designed in the future for video input to accelerate both disparity map and 3D point cloud generation, which are the most compute-intensive tasks in this project.
 For our custom 3D to 2D projection we design an overlay for accelerating multiply-accumulate (MAC) operations and then test it on the PYNQ board via Jupyter Notebook.
 
-<p align="center">
 ![design_flow](https://github.com/smpis/PyPix/blob/master/images/design_flow.PNG)
-</p>
