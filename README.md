@@ -1,5 +1,5 @@
 # PyPix
-3D Scene Reconstruction Based On Stereo Vision
+3D Scene Reconstruction Based on Stereo Vision
 
 YouTube video link: https://www.youtube.com/watch?v=YeAkoiZharE
 
