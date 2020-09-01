@@ -1,7 +1,7 @@
 # PyPix
 3D Scene Reconstruction Based on Stereo Vision
 
-YouTube video link: https://www.youtube.com/watch?v=YeAkoiZharE
+The associated video of this project can be found in the following link: https://www.youtube.com/watch?v=YeAkoiZharE
 
 In this project we aim to take a step towards real-time generation of 3D vision data.
 This has many applications in domains such as drone-mapping, real-time photogrammetry, AR/VR etc. 
