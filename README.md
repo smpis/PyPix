@@ -3,7 +3,7 @@
 
 ## Introduction
 
-<p align="center">
+<p align="left">
 In this project we aim to take a step towards real-time generation of 3D vision data.
 This has many applications in domains such as drone-mapping, real-time photogrammetry, AR/VR etc.
 Real-time processing of video requires significant computations, and mobile applications like drones require low-power portable units. 
@@ -28,7 +28,7 @@ The individual tasks and processes of this project are provided in this section.
 
 ### 1. Camera Calibration
 
-OpenCV open-source code written in Python has been used for calibrating the camera used in this project. The goal of this process is to find the intrinsic parameters of the camera, also known as the camera matrix. The input pattern image used for this initial task is a black and white chessboard pattern that consists of 9 inner corners and 6 inner corners, in the horizontal and vertical directions, respectively. Multiple images of this pattern have been captured from different angles and used by the camera calibration algorithm. An example of such a pattern image is illustrated in the figure below.
+OpenCV open-source code written in Python has been used for calibrating the camera used in this project. The goal of this process is to find the intrinsic parameters of the camera, also known as the camera matrix. The input pattern image used for this initial task is a black and white chessboard pattern that consists of 9 inner corners and 6 inner corners, in the horizontal and vertical directions, respectively. Multiple images of this pattern have been captured from different angles, fed to the camera calibration algorithm. An example of such a pattern image is illustrated in the figure below.
 
 <p align="center">
   <img alt="Chessboard pattern" src="https://github.com/smpis/PyPix/blob/master/images/chessboard_pattern.png">
