@@ -28,4 +28,6 @@ OpenCV open-source code written in Python has been used for calibrating the came
 
 The output of the camera matrix i.e. the focal lengths pair (fx, fy) and the principal points pair (cx, cy), is provided below.
 
-![Camera_matrix](https://github.com/smpis/PyPix/blob/master/images/camera_matrix.PNG)
+<p align="center">
+  <img src="https://github.com/smpis/PyPix/blob/master/images/camera_matrix.PNG">
+</p>
