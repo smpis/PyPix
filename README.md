@@ -16,11 +16,11 @@ Custom overlays will be designed in the future for video input to accelerate bot
 
 ![PyPix_design_flow](https://github.com/smpis/PyPix/blob/master/images/PyPix_design_flow.png)
 
-# Methodology
+## Methodology
 
 The individual tasks and processes of this project are provided in this section.
 
-1. Camera Calibration
+### 1. Camera Calibration
 
 OpenCV open-source code written in Python has been used for calibrating the camera used in this project. The goal of this process is to find the intrinsic parameters of the camera, also known as the camera matrix. The input pattern image used for this initial task is a black and white chessboard pattern that consists of 9 inner corners and 6 inner corners, in the horizontal and vertical directions, respectively. Multiple images of this pattern have been captured from different angles and used by the camera calibration algorithm. An example of such a pattern image is illustrated in the figure below.
 
