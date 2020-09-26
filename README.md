@@ -15,7 +15,7 @@ For our custom 3D to 2D projection algorithm, we design an overlay to accelerate
 Custom overlays will be designed in the future for video input to accelerate both the disparity map and the 3D point cloud generation, which are the most compute-intensive tasks in this project.
 
 <p align="center">
-  <img src="https://github.com/smpis/PyPix/blob/master/images/PyPix_design_flow.png">
+  <img alt="PyPix design flow" src="https://github.com/smpis/PyPix/blob/master/images/PyPix_design_flow.png">
 </p>
 
 ## Methodology
@@ -31,5 +31,5 @@ OpenCV open-source code written in Python has been used for calibrating the came
 The output of the camera matrix i.e. the focal lengths pair (fx, fy) and the principal points pair (cx, cy), is provided below.
 
 <p align="center">
-  <img src="https://github.com/smpis/PyPix/blob/master/images/camera_matrix.PNG">
+  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/camera_matrix.PNG">
 </p>
