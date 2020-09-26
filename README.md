@@ -3,7 +3,7 @@
 
 ## Introduction
 
-<p align="center"
+<p align="center">
 In this project we aim to take a step towards real-time generation of 3D vision data.
 This has many applications in domains such as drone-mapping, real-time photogrammetry, AR/VR etc.
 Real-time processing of video requires significant computations, and mobile applications like drones require low-power portable units. 
