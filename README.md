@@ -1,4 +1,4 @@
-PyPix
+# PyPix
 3D Scene Reconstruction Based on Stereo Vision
 
 The associated video of this project can be found in the following link: https://www.youtube.com/watch?v=YeAkoiZharE
