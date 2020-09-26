@@ -26,7 +26,9 @@ The individual tasks and processes of this project are provided in this section.
 
 OpenCV open-source code written in Python has been used for calibrating the camera used in this project. The goal of this process is to find the intrinsic parameters of the camera, also known as the camera matrix. The input pattern image used for this initial task is a black and white chessboard pattern that consists of 9 inner corners and 6 inner corners, in the horizontal and vertical directions, respectively. Multiple images of this pattern have been captured from different angles and used by the camera calibration algorithm. An example of such a pattern image is illustrated in the figure below.
 
-![Chessboard_pattern](https://github.com/smpis/PyPix/blob/master/images/chessboard_pattern.png)
+<p align="center">
+  <img alt="Chessboard pattern" src="https://github.com/smpis/PyPix/blob/master/images/chessboard_pattern.png">
+</p>
 
 The output of the camera matrix i.e. the focal lengths pair (fx, fy) and the principal points pair (cx, cy), is provided below.
 
