@@ -3,6 +3,7 @@
 
 ## Introduction
 
+<p align="center"
 In this project we aim to take a step towards real-time generation of 3D vision data.
 This has many applications in domains such as drone-mapping, real-time photogrammetry, AR/VR etc.
 Real-time processing of video requires significant computations, and mobile applications like drones require low-power portable units. 
@@ -13,6 +14,7 @@ This is fast enough to run for video input and we demonstrate that by moving the
 Next, we recreate this pipeline on the PYNQ-Z2 board. We demonstrate the concept on stereo images and then we time the performance. 
 For our custom 3D to 2D projection algorithm, we design an overlay to accelerate the multiply-accumulate (MAC) operations and then test it on the PYNQ board via Jupyter Notebook.
 Custom overlays will be designed in the future for video input to accelerate both the disparity map and the 3D point cloud generation, which are the most compute-intensive tasks in this project.
+</p>
 
 The associated video of this project can be found in the following link: https://www.youtube.com/watch?v=YeAkoiZharE
 
