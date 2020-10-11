@@ -55,7 +55,7 @@ In future work, a method to compress the input frame or existing 3D cloud genera
 </p>
 
 <p align="center">
-  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/aloe_gray.PNG">
+  <img alt="Disparity map" src="https://github.com/smpis/PyPix/blob/master/images/aloe_gray.PNG">
 </p>
 
 ### 3. 3D point cloud
@@ -65,7 +65,7 @@ The 3D point cloud was generated using the associated built-in OpenCV function. 
 </p>
 
 <p align="center">
-  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/3d_recon_aloe.PNG">
+  <img alt="3D point cloud" src="https://github.com/smpis/PyPix/blob/master/images/3d_recon_aloe.PNG">
 </p>
 
 ### 4. 3D to 2D projection
@@ -84,5 +84,5 @@ There are a couple of reasons for this low performance. Firstly, there is no dat
 </p>
 
 <p align="center">
-  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/output_2D_plane">
+  <img alt="3D to 2D projection" src="https://github.com/smpis/PyPix/blob/master/images/output_2D_plane.PNG">
 </p>
