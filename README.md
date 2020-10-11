@@ -86,3 +86,18 @@ There are a couple of reasons for this low performance. Firstly, there is no dat
 <p align="center">
   <img alt="3D to 2D projection" src="https://github.com/smpis/PyPix/blob/master/images/output_2D_plane.PNG">
 </p>
+
+## Conclusion
+
+<p align="left">
+Real-time 3D modelling on a PYNQ board was the primary motivation behind this project. It was realised that a lot of optimisation is possible in the whole 3D modeling pipeline  but full optimising was outside the scope of this project. Nevertheless, different sections of the pipeline were improved with different approaches. 
+</p>
+
+<p align="left">
+The stereo video input was simulated by splitting the mono camera. Then to generate more accurate maps Aloe vera image dataset was used. A custom 3D to 2D projection algorithm  was employed to visualize as existing tools like mesh lab would be very intense for real time application. To prove that PYNQ board can be used for acceleration, a custom overlay was created for this projection. The overlay was successfully able to replicate the original algorithm but can be accelerated much further. In future work all the bottlenecks mentioned throughout the project would be accelerated by creating custom overlay.
+This work proves that both the portable and parallel computation capacity of PYNQ board makes them the ideal candidate for real time 3D modeling. The authors hope that this would inspire more developers to work on practical applications such as drone mapping or GoPro for on the go photogrammetry. The python platform makes it very easy to prototype such applications and the future is full of interesting possibilities with PYNQ.
+</p>
+
+<p align="left">
+Some of the next steps for this project would be to begin looking at data handling on the board to make full use of the accelerated hardware multiplications. This would also allow for further parallelisation of the rotation and projection calculations either by performing multiple operations at a time or processing multiple points at a time. Another step would be to create a complete pipeline for this process from video acquisition through to output projection of 3D space. Other steps that can be taken are to implement accelerators for the calculation of the point cloud or the disparity.depth map. All of these steps would push this project closer to a complete real time 3D render and visualisation of an object or environment.
+</p>
