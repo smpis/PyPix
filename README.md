@@ -39,3 +39,13 @@ The output of the camera matrix i.e. the focal lengths pair (fx, fy) and the pri
 <p align="center">
   <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/camera_matrix.PNG">
 </p>
+
+### 2. Disparity Map
+
+<p align="center">
+After camera calibration, disparity map generation is the next step in the design flow. The disparity map was created and timed both in the PYNQ board and a CPU for validation. The initial aim was to generate stereo vision from two cameras. Due to lack of direct access to stereo cameras a work around was tried to generate pseudo stereo video. The input video is split into two parts to virtually create stereo vision and generate the disparity map. Though the generated map would not be very accurate, the purpose here was to evaluate how 3D construction algorithms work on real time stereo input. OpenCV inbuilt functions  that generate disparity maps were used to accelerate the pipeline
+In future work, a method to compress the input frame or existing 3D cloud generating algorithms (VisualSFM, OpenMVS) etc will be used. There are a lot of such tools available but they are computationally intensive and only run post recording, not in real time, validating the need for FPGAs. To test the quality of stereo images, the aloe vera stereo image dataset was used. The process was timed on the PYNQ board and it took 12.531396 seconds so this is not feasible for real-time video. A custom overlay will be designed in the future to resolve this. However, the disparity map was generated both on the PYNQ board and the PC to validate the accuracy and as can been seen in the figure below.
+  
+  <p align="center">
+  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/aloe_gray.PNG">
+</p>
