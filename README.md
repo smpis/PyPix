@@ -55,7 +55,7 @@ In future work, a method to compress the input frame or existing 3D cloud genera
 </p>
 
 <p align="center">
-  <img alt="Disparity map" src="https://github.com/smpis/PyPix/blob/master/images/aloe_gray.PNG">
+  <img alt="Disparity map" src="https://github.com/smpis/PyPix/blob/master/images/disparity_map.PNG">
 </p>
 
 ### 3. 3D point cloud
