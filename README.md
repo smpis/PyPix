@@ -67,3 +67,18 @@ The 3D point cloud was generated using the associated built-in OpenCV function. 
 <p align="center">
   <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/3d_recon_aloe.PNG">
 </p>
+
+### 4. 3D to 2D projection
+
+<p align="left">
+The method of creating the projected 2D image first starts with the generated 3D dense point cloud. A 3D point cloud can be treated as all of the required information about the model. It holds the positional information; X, Y, Z coordinates, as well as the colour information; Red, Green, Blue intensity. To properly test the function, a simple cube was first generated with 8 points representing each of the corners on the object. This structure was then used for the rotation and translation functions. The cube was rotating in all 3 axes independently with the ability to output all points to the screen in the desired position and colour. The previously generated 3D dense point cloud provides the X, Y, Z coordinates and the RGB colours for each point so the rotation and translation matrices can be directly applied to this. For the current implementation, it was decided that a single input frame would be used and would be rotated to view the projection in a series of output frames. This could be changed to be a stream of input images i.e. video with the view either constant or even rotating around it. With the transforms completed, the final output frames were saved to a variable. It is entirely possible to directly view the output frames as they are being generated, though on a laptop this results in approximately a new frame very 3-5 seconds.
+</p>
+
+<p align="left">
+laptop this results in approximately a new frame very 3-5 seconds.
+The aloe vera example image holds over 230000 individual points to be calculated. Using a laptop with an Intel i5 processor, a rotation in 1 axis followed by a projection takes approximately 102.5 seconds to produce 10 output frames. When running on the PYNQ processor, the speed was markedly slower and so the problem had to be significantly rescaled. For this, the problem size would be reduced to 2300 points for the input. This gave an acceptable timeframe for the process to run and required 14.7 seconds for a single output frame. An output example of the rotated and projected model on the 2D plane is illustrated below.
+</p>
+
+<p align="left">
+There are a couple of reasons for this low performance. Firstly, there is no data handling procedure written for this code. This means that the data is fetched linearly for the board rather than making use of parallel buffers. This could explain why the board processor was faster than making use of the DSP blocks. The communication i.e. the data transferred between the CPU and the FPGA on the board takes longer than the actual hardware acceleration. Secondly, the overlay was only computing in parallel the 3x3 matrix multiplication for a single operation as opposed to, for example, operations on complete frames. This means that the 27 blocks used were all in use at the same time, but to complete a single rotation and projection they would need to be reused for each calculation, individually. There was also only processing performed for each point individually, no points were calculated in parallel.
+</p>
