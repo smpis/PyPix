@@ -58,6 +58,8 @@ In future work, a method to compress the input frame or existing 3D cloud genera
   <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/aloe_gray.PNG">
 </p>
 
+### 3. 3D point cloud
+
 <p align="left">
 The 3D point cloud was generated using the associated built-in OpenCV function. For comparison with the custom method implemented in the next section, Mesh Lab was used to visualize the 3D point cloud. As can be seen from the figure below, the rendering was accurate. The 3D point cloud generation using the PYNQ board took 42.973997 seconds. This proved that disparity map and point cloud generation are bottlenecks that if accelerated would make real-time 3D model generation possible. Creating an overlay for these two OpenCV functions would be also part of the future work of this project.
 </p>
