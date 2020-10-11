@@ -82,3 +82,7 @@ The aloe vera example image holds over 230000 individual points to be calculated
 <p align="left">
 There are a couple of reasons for this low performance. Firstly, there is no data handling procedure written for this code. This means that the data is fetched linearly for the board rather than making use of parallel buffers. This could explain why the board processor was faster than making use of the DSP blocks. The communication i.e. the data transferred between the CPU and the FPGA on the board takes longer than the actual hardware acceleration. Secondly, the overlay was only computing in parallel the 3x3 matrix multiplication for a single operation as opposed to, for example, operations on complete frames. This means that the 27 blocks used were all in use at the same time, but to complete a single rotation and projection they would need to be reused for each calculation, individually. There was also only processing performed for each point individually, no points were calculated in parallel.
 </p>
+
+<p align="center">
+  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/output_2D_plane">
+</p>
