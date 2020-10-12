@@ -94,7 +94,7 @@ Real-time 3D modelling on a PYNQ board was the primary motivation behind this pr
 </p>
 
 <p align="left">
-The stereo video input was simulated by splitting the mono camera. Then to generate more accurate maps Aloe vera image dataset was used. A custom 3D to 2D projection algorithm  was employed to visualize as existing tools like mesh lab would be very intense for real time application. To prove that PYNQ board can be used for acceleration, a custom overlay was created for this projection. The overlay was successfully able to replicate the original algorithm but can be accelerated much further. In future work all the bottlenecks mentioned throughout the project would be accelerated by creating custom overlay.
+The stereo video input was simulated by splitting the mono camera. Then to generate more accurate maps, the aloe vera image dataset was used. A custom 3D to 2D projection algorithm  was employed to visualize as existing tools like mesh lab would be very intense for real time application. To prove that PYNQ board can be used for acceleration, a custom overlay was created for this projection. The overlay was successfully able to replicate the original algorithm but can be accelerated much further. In future work all the bottlenecks mentioned throughout the project would be accelerated by creating custom overlay.
 This work proves that both the portable and parallel computation capacity of PYNQ board makes them the ideal candidate for real time 3D modeling. The authors hope that this would inspire more developers to work on practical applications such as drone mapping or GoPro for on the go photogrammetry. The Python platform makes it very easy to prototype such applications and the future is full of interesting possibilities with PYNQ.
 </p>
 
