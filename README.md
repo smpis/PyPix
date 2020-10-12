@@ -20,7 +20,7 @@ The associated video of this project can be found in the following link: https:/
 </p>
 
 <p align="center">
-  <img alt="PyPix design flow" src="https://github.com/smpis/PyPix/blob/master/images/PyPix_design_flow.png">
+  <img alt="PyPix design flow" src="https://github.com/smpis/PyPix/blob/master/Images/PyPix_design_flow.png">
 </p>
 
 ## Methodology
@@ -36,7 +36,7 @@ OpenCV open-source code written in Python has been used for calibrating the came
 </p>
 
 <p align="center">
-  <img alt="Chessboard pattern" src="https://github.com/smpis/PyPix/blob/master/images/chessboard_pattern.png">
+  <img alt="Chessboard pattern" src="https://github.com/smpis/PyPix/blob/master/Images/chessboard_pattern.png">
 </p>
 
 <p align="left">
@@ -44,7 +44,7 @@ The output of the camera matrix i.e. the focal lengths pair (fx, fy) and the pri
 </p>
 
 <p align="center">
-  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/images/camera_matrix.PNG">
+  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/Images/camera_matrix.PNG">
 </p>
 
 ### 2. Disparity Map
@@ -55,7 +55,7 @@ In future work, a method to compress the input frame or existing 3D cloud genera
 </p>
 
 <p align="center">
-  <img alt="Disparity map" src="https://github.com/smpis/PyPix/blob/master/images/disparity_map.PNG">
+  <img alt="Disparity map" src="https://github.com/smpis/PyPix/blob/master/Images/disparity_map.PNG">
 </p>
 
 ### 3. 3D point cloud
@@ -65,7 +65,7 @@ The 3D point cloud was generated using the associated built-in OpenCV function. 
 </p>
 
 <p align="center">
-  <img alt="3D point cloud" src="https://github.com/smpis/PyPix/blob/master/images/3d_recon_aloe.PNG">
+  <img alt="3D point cloud" src="https://github.com/smpis/PyPix/blob/master/Images/3d_recon_aloe.PNG">
 </p>
 
 ### 4. 3D to 2D projection
@@ -84,7 +84,7 @@ There are a couple of reasons for this low performance. Firstly, there is no dat
 </p>
 
 <p align="center">
-  <img alt="3D to 2D projection" src="https://github.com/smpis/PyPix/blob/master/images/output_2D_plane.PNG">
+  <img alt="3D to 2D projection" src="https://github.com/smpis/PyPix/blob/master/Images/output_2D_plane.PNG">
 </p>
 
 ## Conclusion
