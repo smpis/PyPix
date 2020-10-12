@@ -44,7 +44,7 @@ The output of the camera matrix i.e. the focal lengths pair (fx, fy) and the pri
 </p>
 
 <p align="center">
-  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/Images/camera_matrix.PNG">
+  <img alt="Camera matrix" src="https://github.com/smpis/PyPix/blob/master/Images/camera_matrix.png">
 </p>
 
 ### 2. Disparity Map
